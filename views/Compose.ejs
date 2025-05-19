@@ -35,17 +35,17 @@
 
     <div class="container mt-5">
         <h2 class="mb-4">Compose a New Blog</h2>
-        <form>
+        <form method="post" action="/compose">
             <!-- Blog Title -->
             <div class="mb-3">
                 <label for="blogTitle" class="form-label">Blog Title</label>
-                <input type="text" class="form-control" id="blogTitle" placeholder="Enter blog title">
+                <input name="blog_title" type="text" class="form-control" id="blogTitle" placeholder="Enter blog title">
             </div>
 
             <!-- Blog Description -->
             <div class="mb-3">
                 <label for="blogDescription" class="form-label">Blog Description</label>
-                <textarea class="form-control" id="blogDescription" rows="6"
+                <textarea name="blog_description" class="form-control" id="blogDescription" rows="6"
                     placeholder="Write your blog here..."></textarea>
             </div>
 
